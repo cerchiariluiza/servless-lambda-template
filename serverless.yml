@@ -1,3 +1,5 @@
+org: cerchiariluiza
+app: blog
 
 service: blog
 
@@ -14,7 +16,7 @@ provider:
 
 functions:
   createService:
-    handler: handler.createService
+    handler: articles/create.handler
     events:
       - http:
           path: createService
